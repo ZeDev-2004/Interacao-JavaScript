@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaja!</title>
+</head>
+<body>
+
+    <div>
+        <style>
+            #quadra 
+            { 
+                width: 500px;
+                height:500px; 
+                font-size: 50px;
+                border-radius:50px; 
+                margin: auto;
+                margin-top: 130px;
+                color: white;
+                line-height: 250px;
+                text-align: center;
+                background-color: rgb(19, 19, 19);
+                
+            }
+
+            body
+            { 
+                background:linear-gradient( 87deg , rgb(59, 59, 59), rgb(12, 108, 132) )    
+            }
+        </style>
+
+        <div id = "quadra" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+            Oi
+        </div>
+    </div>
+
+
+    <div> 
+        <script>
+
+            function clicar()
+            {
+                var clicar = window.document.getElementById('quadra')
+
+                clicar.innerText = ("Clicou");
+                clicar.style.background = "#ADD8E6"
+
+            }
+
+            function entrar()
+            { 
+                var entrar = window.document.getElementById('quadra') 
+
+                entrar.innerText = ("Entrou");
+                entrar.style.background = "#CD950C"
+
+            }
+
+            function sair()
+            { 
+                var sair = window.document.getElementById('quadra') 
+
+                sair.innerText = "Saiu"
+                sair.style.background = "#363636"
+            }
+            
+        </script>
+    </div>
+    
+</body>
+</html>
